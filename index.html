@@ -6,13 +6,13 @@
     <title>Controle Restaurante</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Inter', sans-serif;
             background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
@@ -21,19 +21,19 @@
             align-items: center;
             justify-content: center;
         }
-        
+
         .banner-container {
             position: relative;
             width: 90%;
             max-width: 1200px;
             height: 400px;
-            background: linear-gradient(135deg, #d4af37 0%, #ffd700 50%, #b8860b 100%);
+            background: #ffffff; /* Fundo branco */
             border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
             animation: fadeInUp 1s ease-out;
         }
-        
+
         .banner-overlay {
             position: absolute;
             top: 0;
@@ -46,28 +46,28 @@
             justify-content: center;
             flex-direction: column;
         }
-        
+
         .banner-content {
             text-align: center;
             color: white;
             z-index: 2;
         }
-        
+
         .main-title {
             font-family: 'Playfair Display', serif;
             font-size: clamp(3rem, 8vw, 5.5rem);
             font-weight: 700;
             letter-spacing: 2px;
             margin-bottom: 1rem;
-            background: linear-gradient(45deg, #ffd700, #fff, #d4af37);
-            background-size: 200% 200%;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: shimmer 3s ease-in-out infinite;
-            text-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+            color: green; /* Título verde */
+            background: none;
+            -webkit-background-clip: unset;
+            -webkit-text-fill-color: unset;
+            background-clip: unset;
+            animation: none;
+            text-shadow: none;
         }
-        
+
         .subtitle {
             font-family: 'Inter', sans-serif;
             font-size: clamp(1rem, 3vw, 1.4rem);
@@ -77,7 +77,7 @@
             margin-bottom: 2rem;
             opacity: 0.9;
         }
-        
+
         .decorative-line {
             width: 100px;
             height: 3px;
@@ -85,7 +85,7 @@
             margin: 0 auto 2rem;
             animation: pulse 2s ease-in-out infinite;
         }
-        
+
         .chef-icons {
             position: absolute;
             top: 20px;
@@ -94,7 +94,7 @@
             color: rgba(255, 215, 0, 0.3);
             animation: float 3s ease-in-out infinite;
         }
-        
+
         .utensils-icons {
             position: absolute;
             bottom: 20px;
@@ -103,7 +103,7 @@
             color: rgba(255, 215, 0, 0.3);
             animation: float 3s ease-in-out infinite reverse;
         }
-        
+
         .pattern-bg {
             position: absolute;
             top: 0;
@@ -115,7 +115,7 @@
                 radial-gradient(circle at 80% 80%, rgba(255, 215, 0, 0.1) 0%, transparent 50%);
             animation: backgroundShift 8s ease-in-out infinite;
         }
-        
+
         .cta-button {
             background: linear-gradient(45deg, #d4af37, #ffd700);
             color: #1a1a1a;
@@ -131,13 +131,13 @@
             letter-spacing: 1px;
             box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
         }
-        
+
         .cta-button:hover {
             transform: translateY(-2px);
             box-shadow: 0 12px 35px rgba(212, 175, 55, 0.4);
             background: linear-gradient(45deg, #ffd700, #ffed4e);
         }
-        
+
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -148,16 +148,7 @@
                 transform: translateY(0);
             }
         }
-        
-        @keyframes shimmer {
-            0%, 100% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-        }
-        
+
         @keyframes pulse {
             0%, 100% {
                 opacity: 0.6;
@@ -168,7 +159,7 @@
                 transform: scaleX(1.2);
             }
         }
-        
+
         @keyframes float {
             0%, 100% {
                 transform: translateY(0px);
@@ -177,7 +168,7 @@
                 transform: translateY(-10px);
             }
         }
-        
+
         @keyframes backgroundShift {
             0%, 100% {
                 opacity: 0.5;
@@ -186,17 +177,17 @@
                 opacity: 0.8;
             }
         }
-        
+
         @media (max-width: 768px) {
             .banner-container {
                 height: 300px;
                 margin: 20px;
             }
-            
+
             .chef-icons, .utensils-icons {
                 font-size: 1.5rem;
             }
-            
+
             .subtitle {
                 margin-bottom: 1.5rem;
             }
@@ -206,10 +197,10 @@
 <body>
     <div class="banner-container">
         <div class="pattern-bg"></div>
-        
+
         <div class="chef-icons">👨‍🍳</div>
         <div class="utensils-icons">🍽️</div>
-        
+
         <div class="banner-overlay">
             <div class="banner-content">
                 <h1 class="main-title">CONTROLE RESTAURANTE</h1>
