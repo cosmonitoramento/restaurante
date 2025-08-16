@@ -15,41 +15,41 @@
 
         .banner-container {
             width: 100%;
-            height: 120px;
+            height: 130px; /* um pouco maior */
             background: #ffffff;
             border-bottom: 1px solid #dcdcdc;
             display: flex;
             align-items: center;
-            justify-content: space-between; /* ocupa de ponta a ponta */
-            padding: 0 40px; /* margem interna */
+            justify-content: space-between;
+            padding: 0 30px; /* espaço interno reduzido */
             box-shadow: 0 3px 8px rgba(0,0,0,0.08);
         }
 
         .main-title {
-            font-size: 2.5rem;
-            font-weight: 600;
+            font-size: 3rem; /* letras maiores */
+            font-weight: 700;
             color: #2e7d32;
-            letter-spacing: 1.5px;
+            letter-spacing: 2px;
             text-align: center;
-            flex: 1; /* ocupa o espaço do meio */
+            flex: 1;
         }
 
         .side-image {
-            height: 70px;
+            height: 55px; /* logos menores */
             width: auto;
-            opacity: 0.95;
+            opacity: 0.9;
         }
 
         @media (max-width: 768px) {
             .banner-container {
                 height: 100px;
-                padding: 0 20px;
+                padding: 0 15px;
             }
             .main-title {
                 font-size: 2rem;
             }
             .side-image {
-                height: 50px;
+                height: 40px;
             }
         }
 
@@ -62,7 +62,7 @@
                 font-size: 1.5rem;
             }
             .side-image {
-                height: 40px;
+                height: 30px;
             }
         }
     </style>
