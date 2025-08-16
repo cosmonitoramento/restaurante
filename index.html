@@ -11,36 +11,31 @@
             font-family: 'Exo 2', sans-serif;
             background: #f9f9f9;
             margin: 0;
-            padding: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
 
         .banner-container {
             width: 100%;
-            max-width: 1200px;
-            height: 120px; /* aumentado */
+            height: 120px;
             background: #ffffff;
-            border: 1px solid #dcdcdc;
-            border-radius: 10px;
+            border-bottom: 1px solid #dcdcdc;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between; /* ocupa de ponta a ponta */
+            padding: 0 40px; /* margem interna */
             box-shadow: 0 3px 8px rgba(0,0,0,0.08);
-            padding: 0 40px; /* espaço interno maior */
         }
 
         .main-title {
-            font-size: 2.5rem; /* maior */
+            font-size: 2.5rem;
             font-weight: 600;
             color: #2e7d32;
             letter-spacing: 1.5px;
-            margin: 0 30px; /* mais espaço entre título e logos */
+            text-align: center;
+            flex: 1; /* ocupa o espaço do meio */
         }
 
         .side-image {
-            height: 70px; /* maior */
+            height: 70px;
             width: auto;
             opacity: 0.95;
         }
@@ -52,7 +47,6 @@
             }
             .main-title {
                 font-size: 2rem;
-                margin: 0 15px;
             }
             .side-image {
                 height: 50px;
@@ -66,7 +60,6 @@
             }
             .main-title {
                 font-size: 1.5rem;
-                margin: 0 10px;
             }
             .side-image {
                 height: 40px;
@@ -78,9 +71,9 @@
     <div class="banner-container">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZY4zGY-vMyLDmOnydKFUjEBoje0J4bfvjRg&s" 
              alt="Logo" class="side-image">
-        
+
         <h1 class="main-title">CONTROLE RESTAURANTE</h1>
-        
+
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZY4zGY-vMyLDmOnydKFUjEBoje0J4bfvjRg&s" 
              alt="Logo" class="side-image">
     </div>
