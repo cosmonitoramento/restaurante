@@ -32,10 +32,10 @@
             border-radius: 15px;
             overflow: hidden;
             box-shadow: 
-                0 0 30px rgba(255, 215, 0, 0.3),
-                0 0 60px rgba(255, 215, 0, 0.1),
+                0 0 30px rgba(76, 175, 80, 0.3),
+                0 0 60px rgba(76, 175, 80, 0.1),
                 inset 0 1px 0 rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 215, 0, 0.2);
+            border: 1px solid rgba(76, 175, 80, 0.2);
             animation: containerGlow 4s ease-in-out infinite;
         }
         
@@ -58,9 +58,9 @@
             background: linear-gradient(
                 45deg,
                 transparent 30%,
-                rgba(255, 215, 0, 0.8) 40%,
+                rgba(76, 175, 80, 0.8) 40%,
                 rgba(255, 255, 255, 0.9) 50%,
-                rgba(255, 215, 0, 0.8) 60%,
+                rgba(76, 175, 80, 0.8) 60%,
                 transparent 70%
             );
             background-size: 200% 100%;
@@ -69,10 +69,10 @@
             background-clip: text;
             animation: shimmerText 3s linear infinite;
             text-shadow: 
-                0 0 20px rgba(255, 215, 0, 0.5),
-                0 0 40px rgba(255, 215, 0, 0.3),
-                0 0 60px rgba(255, 215, 0, 0.1);
-            filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.4));
+                0 0 20px rgba(76, 175, 80, 0.5),
+                0 0 40px rgba(76, 175, 80, 0.3),
+                0 0 60px rgba(76, 175, 80, 0.1);
+            filter: drop-shadow(0 0 10px rgba(76, 175, 80, 0.4));
         }
         
         .side-image {
@@ -84,17 +84,17 @@
             opacity: 0.6;
             animation: float 4s ease-in-out infinite;
             filter: 
-                drop-shadow(0 0 15px rgba(255, 215, 0, 0.4))
-                drop-shadow(0 0 25px rgba(255, 215, 0, 0.2));
+                drop-shadow(0 0 15px rgba(76, 175, 80, 0.4))
+                drop-shadow(0 0 25px rgba(76, 175, 80, 0.2));
         }
         
         .side-image.left {
-            left: 20px;
+            left: 5px;
             animation-delay: 0s;
         }
         
         .side-image.right {
-            right: 20px;
+            right: 5px;
             animation-delay: 2s;
             transform: translateY(-50%) scaleX(-1);
         }
@@ -113,7 +113,7 @@
             position: absolute;
             width: 3px;
             height: 3px;
-            background: radial-gradient(circle, rgba(255, 215, 0, 0.8) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(76, 175, 80, 0.8) 0%, transparent 70%);
             border-radius: 50%;
             animation: sparkle 6s linear infinite;
         }
@@ -155,8 +155,8 @@
             right: 0;
             bottom: 0;
             background-image: 
-                linear-gradient(rgba(255, 215, 0, 0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255, 215, 0, 0.03) 1px, transparent 1px);
+                linear-gradient(rgba(76, 175, 80, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(76, 175, 80, 0.03) 1px, transparent 1px);
             background-size: 20px 20px;
             animation: gridMove 10s linear infinite;
             z-index: 1;
@@ -174,7 +174,7 @@
         .accent-line {
             position: absolute;
             height: 2px;
-            background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.6), transparent);
+            background: linear-gradient(90deg, transparent, rgba(76, 175, 80, 0.6), transparent);
             animation: lineGlow 4s ease-in-out infinite;
         }
         
@@ -195,14 +195,14 @@
         @keyframes containerGlow {
             0%, 100% {
                 box-shadow: 
-                    0 0 30px rgba(255, 215, 0, 0.3),
-                    0 0 60px rgba(255, 215, 0, 0.1),
+                    0 0 30px rgba(76, 175, 80, 0.3),
+                    0 0 60px rgba(76, 175, 80, 0.1),
                     inset 0 1px 0 rgba(255, 255, 255, 0.1);
             }
             50% {
                 box-shadow: 
-                    0 0 40px rgba(255, 215, 0, 0.5),
-                    0 0 80px rgba(255, 215, 0, 0.2),
+                    0 0 40px rgba(76, 175, 80, 0.5),
+                    0 0 80px rgba(76, 175, 80, 0.2),
                     inset 0 1px 0 rgba(255, 255, 255, 0.2);
             }
         }
@@ -269,11 +269,11 @@
             }
             
             .side-image.left {
-                left: 10px;
+                left: 5px;
             }
             
             .side-image.right {
-                right: 10px;
+                right: 5px;
             }
             
             .main-title {
